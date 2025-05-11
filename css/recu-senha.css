@@ -1,37 +1,45 @@
+@charset "UTF-8";
 
 main.recu-senha {
-    width: 50%;
-    height: 90vh;
+    min-width: 40%;
+    height: 80vh;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 
-    margin: 0 auto;
-    position: relative;
-
-    overflow: hidden;
 }
 
 .titulo-de-pagina{
-    background-color: #f3a853;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
     padding: 20px;
     text-align: center;
 }
 
-.conteudo{
+header.titulo-de-pagina > h1{
+    margin: 0;
+}
+
+.conteudo {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    gap: 15px; /* Espaçamento entre os elementos */
-    margin-top: 20px;
+    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor */
+    align-items: center;
+    height: 100%;
+    margin: 20px;
 }
+
 
 main form {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor */
     align-items: center;
-    justify-content: center;
+    height: 100%;
     width: 100%;
 }
 
@@ -41,11 +49,17 @@ main form input{
 
 button.btn{
     width: 80%;
+    height: 1.8em;
+    font-size: 1.8em;
+    padding: 1px;
 }
 
-#voltar{
-    position: relative;
-    right: 300px;
-    color: white;
+span.icon{
+    font-size: 3.5em;
+    color: #fff;
 }
 
+#campo-codigo{
+    height: 1.8em;
+    font-size: 1.8em;
+}

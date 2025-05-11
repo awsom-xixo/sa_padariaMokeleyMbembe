@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/padrao.css" />
     <link rel="stylesheet" href="../css/recu-senha.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Recuperação de Senha</title>
   </head>
   <body>
-
     <main class="recu-senha">
-      <div class="titulo-de-pagina">
-        <a href="recu-senha-email.html" >
-        <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="48px" fill="#fff" id="voltar"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z"/></svg>
-        </a>   
-        <h1>Código de Verificação</h1></div>
+        <header class="titulo-de-pagina">
+          <a href="recu-senha-email.html" >
+            <span class="material-symbols-outlined icon">arrow_back</span>
+          </a>   
+          <h1>Código de Verificação</h1>
+        </header>
       <div class="conteudo">
-        <p>Verifique sua caixa de entrada de E-mail e <br> insira o código recebido abaixo. </p>
+        <p>Verifique sua caixa de entrada de E-mail e insira o código recebido abaixo: </p>
         <form>
-          <input type="number" placeholder="Código" name="code" class="campo sem-spinners"/>
+          <input type="number" placeholder="Código" name="code" id="campo-codigo" class="campo sem-spinners"/>
           <button class="btn">Continuar</button>
         </form>
       </div>
