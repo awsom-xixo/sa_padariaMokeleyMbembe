@@ -173,3 +173,7 @@ a{
     left: 735px;
     bottom:207px
 }
+
+#erro_mensagem{
+    position: absolute;
+}

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/padrao.css" />
     <link rel="stylesheet" href="../css/recu-senha.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../js/js_redirecionar.js"></script>
     <title>Recuperação de Senha</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
         <form>
           <input type="number" placeholder="Código" name="code" id="campo-codigo" class="campo sem-spinners"/>
           <button class="btn">Reenviar Código</button>
-          <button class="btn">Continuar</button>
+          <button class="btn" type="button" onclick="redi_redefinir()">Continuar</button>
         </form>
       </div>
     </main>

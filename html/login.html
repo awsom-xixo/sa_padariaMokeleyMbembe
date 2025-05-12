@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <script src="../js/js_redirecionar.js"></script>
 
     <title>Login-Mokele!</title>
   </head>
@@ -21,7 +22,7 @@
 
       <div class="login-header">
         <h1>Login</h1>
-        <img src="Mokele_icon.png" id="mokele_logo" />
+        <img src="../img/icon.png" id="mokele_logo" />
       </div>
 
       <div class="campo_identificador">
@@ -36,11 +37,15 @@
 
           <span class="material-symbols-outlined" id="senha_simbolo">key</span>
 
-          <a href="../recu-senha/recu-senha-email.html">
+          <a href="recu-senha-email.html">
             <p>Esqueceu sua senha animal?</p>
           </a>
 
-          <button>Login</button>
+          <button type="button" onclick="verificar_login()">Login</button>
+
+          <div id="erro_mensagem" style="color: red; font-size: 14px; display: none;">
+            Nome ou senha inválidos.
+          </div>
         </form>
       </div>
     </div>
