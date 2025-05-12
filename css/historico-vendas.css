@@ -82,10 +82,14 @@ thead td, th{
 
 header{
     background-color: #f8f5ee;
+    height:15%;
 }
 
 h1{
     color: #f3a853;
+    position: relative;
+    left:32px;
+    top:18px;
 }
 
 .pesquisa-vendas, .pesquisa-vendas{
@@ -103,8 +107,20 @@ table{
 }
 
 #exportar{
+    position: absolute;
+    left: 92%;
+    bottom: 40px;
+    padding: 5px 10px;
+}
+#filtrar{
     position: relative;
-    left: 1130px;
-    bottom: 30px;
-    
+    left: 90%;
+    top: 140px;
+    padding: 5px 15px;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #f9a825; /* cor mostarda bonita como o título */
+    margin-bottom: 20px;
 }
