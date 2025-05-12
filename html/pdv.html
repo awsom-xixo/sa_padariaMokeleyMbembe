@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Vendas</title>
+  
+  <link rel="stylesheet" href="../css/pdv.css" />
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/padrao.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  
+</head>
+
+<body>
+  <nav class="menu-lateral">
+    <div class="cabeca-do-menu">
+        <img src="../img/icon.png" alt="Logo Da Padaria Mokele y Mbembe" class="logo">
+        <h1>Padaria<br>Mokele y Mbembe</h1>
+    </div>
+
+    <ul>
+        <li class="item-menu">
+            <a href="menu-gerente.html">
+                <span class="icon">
+                    <span class="material-symbols-outlined">home</span>
+                </span>
+                <span class="nome-do-link">Home</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="sistema-vendas.html">
+                <span class="icon">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </span>
+                <span class="nome-do-link">Sistema de Vendas</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+                <span class="icon">
+                    <span class="material-symbols-outlined">dashboard</span>
+                </span>
+                <span class="nome-do-link">Dashboard</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="historico-vendas.html">
+                <span class="icon">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                </span>
+                <span class="nome-do-link">Histórico de Vendas</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="estoque.html">
+                <span class="icon">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                </span>
+                <span class="nome-do-link">Estoque</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="Gestao-usuario.html">
+                <span class="icon">
+                    <span class="material-symbols-outlined">groups</span>
+                </span>
+                <span class="nome-do-link">Gestão de Usuários</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+                <span class="icon">
+                    <span class="material-symbols-outlined">confirmation_number</span>
+                </span>
+                <span class="nome-do-link">Emissão de Comandas</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+                <span class="icon">
+                    <span class="material-symbols-outlined">logout</span>
+                </span>
+                <span class="nome-do-link">Logout</span>
+            </a>
+        </li>
+    </ul>
+  </nav>
+
+  <main id="pdv">
+    <h1>Produtos</h1>
+    <form class="area-busca">
+      <label for="produto"><span class="material-symbols-outlined">Barcode</span></label>
+      <input type="text" id="produto" placeholder="Nome, Cód ou comanda" />
+
+      <label for="qtde" style="margin-left: 2rem;">Quantidade:</label>
+      <input type="text" id="qtde" placeholder="Quantidade"/>
+
+      <button class="btn-mais">-</button>
+      <button class="btn-menos">+</button>
+      <button class="btn-add">Adicionar</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Cod</th>
+          <th>Qtde</th>
+          <th>Val Uni</th>
+          <th>Medida</th>
+          <th>Desconto</th>
+          <th>Subtotal</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pão Francês</td>
+          <td>0012</td>
+          <td>0,320</td>
+          <td>12,15</td>
+          <td>KG</td>
+          <td>0,20</td>
+          <td>R$3,89</td> 
+          <td>
+            <span class="material-symbols-outlined edit">edit</span>
+            <span class="material-symbols-outlined delete">delete</span>            
+          </td>
+        </tr>
+        <tr>
+          <td>Cuca de Banana</td>
+          <td>0013</td>
+          <td>1</td>
+          <td>30,00</td>
+          <td>un</td>
+          <td>0,20</td>
+          <td>R$28,00</td>
+          <td>
+            <span class="material-symbols-outlined edit">edit</span>
+            <span class="material-symbols-outlined delete">delete</span>            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- PARTE DA DIREITA -->
+
+  <div class="caixa">
+    <header>
+      <h1>Sistema de Vendas</h1>
+      
+      <span class="data"><span>Data: 22/04/25 - 19:04</span><br>
+      <span class="atend">Atendente: Josias</span><br>
+      <span class="info">Caixa: 0-00001</span>
+
+    </header>
+
+    <section>
+      <img src="../img/icon.png" alt="">
+    </section>
+
+    
+    <footer id="rodape-venda">
+        <div>
+          <span id="desconto">Desconto:</span>
+          <span id="val-desconto">R$:2,00</span>
+        </div>
+        <div>
+          <span id="total">Total:</span>
+          <span id="val-total">R$: 28,00</span>
+        </div>
+        <button id="cancelar-venda">Cancelar</button>
+        <button id="finalizar-venda">Finalizar Venda</button>
+    </footer>
+  </div>
+  
+  <footer>
+    <span>Usuário: João Mbembe Gerente</span>
+    <span>Copyright 2025-2025</span>
+  </footer>
+</body>
+
+</html>
