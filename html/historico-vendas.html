@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/historico-vendas.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Histórico de vendas</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Histórico de vendas</h1>
+            <hr>
+        </header>
+        <h5 style="font: Open sans; position: relative; left: 15px;">Filtros para consulta:</h5>
+        <form action="post">
+            <input type="datetime" name="data-form" id="data-form" placeholder="Data">
+            <input min="0" type="number" name="id-form" id="id-form" placeholder="ID Item">
+            <input type="text" name="nome-form" id="nome-form" placeholder="Nome funcionario">
+            <input type="text" name="metodo-pagamento-form" id="metodo-pagamento-form" placeholder="Método de pagamento">
+
+
+            <a href="segredo do curintia">Mais filtros</a>
+            
+            <button>Filtrar</button>
+        </form>
+        <!-- Esta tabela está fixa, sem ligação com o banco de dados, é necessario linkar ela ao banco para
+         uma estrutura funcional, alem disso verificar bem a ordem ja que nao pode ter o nome do atendente em QTDE -->
+         <div class="pesquisa-vendas">
+            <table class="tabela-vendas">
+                <thead>
+                    <tr>
+                        <th id="prod">Produto</th>
+                        <th>Cod</th>
+                        <th>Qtde</th>
+                        <th>Uni medida</th>
+                        <th>Val uni</th>
+                        <th>Subtotal</th>
+                        <th id="acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/04/25 - 14:56</td>
+                        <td>VEN-20250412-0001</td>
+                        <td>Josias M. Junco</td>
+                        <td>Cartão</td>
+                        <td>8</td>
+                        <td>45,99</td>
+                        <td><span class="material-symbols-outlined">open_in_full</span></td>
+                    </tr>
+                    <tr>
+                        <td>12/04/25 - 15:02</td>
+                        <td>VEN-20250412-0002</td>
+                        <td>Josias M. Junco</td>
+                        <td>Pix</td>
+                        <td>12</td>
+                        <td>12,89</td>
+                        <td><span class="material-symbols-outlined">open_in_full</span></td>
+                    </tr>
+                    <tr>
+                        <td>12/04/25 - 15:07</td>
+                        <td>VEN-20250412-0003</td>
+                        <td>Josias M. Junco</td>
+                        <td>Cartão</td>
+                        <td>6</td>
+                        <td>10,79</td>
+                        <td><span class="material-symbols-outlined">open_in_full</span></td>
+                    </tr>
+                    <tr>
+                        <td>12/04/25 - 15:12</td>
+                        <td>VEN-20250412-0004</td>
+                        <td>Josias M. Junco</td>
+                        <td>Pix</td>
+                        <td>2</td>
+                        <td>17,99</td>
+                            <td><span class="material-symbols-outlined">open_in_full</span></td>
+                    </tr>
+                </tbody>
+                    
+            </table>
+            
+         </div>
+        
+        <button id="exportar">Exportar</button>
+    </main>
+    
+    
+</body>
+</html>
