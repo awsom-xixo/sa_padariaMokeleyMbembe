@@ -35,7 +35,7 @@ div.titulo-de-pagina h1 {
     color: #f3a852
 }
 .add{
-    background: linear-gradient(#f3a853, #fac991);
+    background-color:#f3a853;
     color: white;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px #2525224d;
@@ -46,7 +46,7 @@ div.titulo-de-pagina h1 {
     box-shadow: 4px 4px 10px;
 }
 .export{
-    background: linear-gradient(#f3a853, #fac991);
+    background-color: #f3a853;
     color: white;
     padding: 5px 10px;
     box-shadow: 2px 2px 5px #2525226c;
@@ -65,7 +65,7 @@ hr{
 
 }
 button {
-    background: linear-gradient(#f3a853, #fac991);
+    background-color: #f3a853;
     color: white;
     font-weight: 500;
     border: none;
@@ -77,7 +77,7 @@ button {
 
 main a{
     text-decoration: none;
-    background: linear-gradient(#f3a853, #fac991);
+    background-color: #f3a853;
     font-weight: 700;
 }
 
@@ -115,7 +115,7 @@ footer .footer-esquerdo, footer .footer-direito {
     margin: 0;
 }
 thead {
-    background: linear-gradient(#edb06a, #f3a852);
+    background-color: #f3a853;
     color: #252522;
 }
 thead {
@@ -123,7 +123,7 @@ thead {
     vertical-align: middle;
     unicode-bidi: isolate;
     border-color: inherit;
-    background: linear-gradient(#f3a853, #fac991);
+    background-color: #f3a853;
 }
 table {
     width: 100%;
@@ -195,7 +195,7 @@ main {
 }
 
 .form-container button {
-    background: linear-gradient(#f3a853, #fac991);;
+    background-color: #f3a853;
     border: none;
     color: white;
     cursor: pointer;
