@@ -14,7 +14,7 @@ header {
     margin-left: -1.5%;
     margin-right: 5%;
     margin-top: 10px;
-    background: linear-gradient(#faca92, #edb06a, #f3a852);
+    background-color: #f3a853;
     color: #fff;
     padding: 5px;
     border-radius:20px;
@@ -28,10 +28,9 @@ p{
     font-size: 15px;
 }
 .back {
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
     border-radius: 36px;
     padding: 5px 20px 20px 20px;
-    background-color: #f3a8532d;
+    background-color: #f3a85300;
     margin: 60px auto 30px auto; /* Topo 60px, base 30px */
     max-width: 1050px;
     max-height: 700px;
@@ -48,6 +47,7 @@ p{
     justify-content: center;
     gap: 20px;
     max-width: 1050px;
+    box-shadow: 0 10px 10px #f3a853;
     height: 550px;
     margin: auto;
     margin-top:-10px;
