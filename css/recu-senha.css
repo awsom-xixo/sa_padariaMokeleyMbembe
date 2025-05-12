@@ -13,15 +13,20 @@ main.recu-senha {
 
 }
 
-.titulo-de-pagina{
+.titulo-de-pagina {
     display: flex;
-    justify-content: flex-start;
     padding: 20px;
     text-align: center;
 }
 
-header.titulo-de-pagina > h1{
+header.titulo-de-pagina > h1 {
     margin: 0;
+    text-align: center;
+}
+
+span.icon {
+    font-size: 3.5em;
+    color: #fff;
 }
 
 .conteudo {
@@ -32,7 +37,6 @@ header.titulo-de-pagina > h1{
     height: 100%;
     margin: 20px;
 }
-
 
 main form {
     display: flex;
@@ -47,19 +51,15 @@ main form input{
     width: 80%;
 }
 
-button.btn{
+button.btn {
     width: 80%;
-    height: 1.8em;
-    font-size: 1.8em;
+    line-height: 3em;
+    font-size: 1.1em;
     padding: 1px;
 }
 
-span.icon{
-    font-size: 3.5em;
-    color: #fff;
-}
-
 #campo-codigo{
-    height: 1.8em;
-    font-size: 1.8em;
+    line-height: 2.5em;
+    font-size: 2.5em;
+    text-align: center;
 }
