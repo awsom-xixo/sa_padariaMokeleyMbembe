@@ -4,7 +4,6 @@ main.recu-senha {
     min-width: 40%;
     height: 80vh;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
     margin: auto;
     display: flex;
@@ -32,7 +31,7 @@ span.icon {
 .conteudo {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor */
+    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor dos itens da div*/
     align-items: center;
     height: 100%;
     margin: 20px;
@@ -41,7 +40,7 @@ span.icon {
 main form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor */
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     width: 100%;

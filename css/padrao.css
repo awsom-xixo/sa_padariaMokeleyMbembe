@@ -21,7 +21,7 @@ main {
     max-width: calc(100% - 100px);
     margin: 5vh auto 5vh 80px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 10px #f3a853;
     border-radius: 18px;
     overflow: hidden; /* opcional, para evitar vazamentos visuais */
 }
