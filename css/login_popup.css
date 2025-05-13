@@ -18,17 +18,49 @@ body {
 }
 
 main.recu-senha {
-    min-width: 40%;
-    height: 80vh;
+    width: 400px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 18px;
-    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  main.recu-senha header.titulo-de-pagina {
+    background: linear-gradient(to right, #f3a852, #edb06a);
+    color: white;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main.recu-senha .titulo-de-pagina .close {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  main.recu-senha .conteudo {
+    padding: 20px;
+    text-align: center;
+  }
+  main.recu-senha input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 40px 10px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
 
-}
 
 .titulo-de-pagina {
     display: flex;
@@ -47,12 +79,9 @@ span.icon {
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; /* Distribui espaço igual entre e ao redor */
-    align-items: center;
-    height: 100%;
-    margin: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.95rem;
 }
 
 .container{
@@ -159,12 +188,13 @@ main form {
   .modal-content button:hover {
     background-color: #e07b3a;
   }
-form input{
+  form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
     border: 1px solid #967345;
     border-radius: 18px;
-    padding: 10px;
-    width: 20%;
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 input::placeholder {

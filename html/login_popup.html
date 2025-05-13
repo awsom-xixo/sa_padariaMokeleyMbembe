@@ -30,12 +30,15 @@
             <span class="material-symbols-outlined icon">arrow_back</span>
           </a>   
           <h1>Código de Verificação</h1>
+          <span class="close">&times;</span>
         </header>
       <div class="conteudo">
         <p>Para solicitar a redefinição de senha, enviaremos um <br> código por e-mail para que possa redefinir sua senha. <br> Preencha o campo abaixo e clique em "Enviar Código"</p>
         <form>
           <input type="email" placeholder="E-mail" name="email" class="campo"/>
+          <input type="id" placeholder="Código" name="cod" class="campo"/>
           <button class="btn" type="button" onclick="redi_code()">Enviar Código</button>
+          <button class="btn-confirmar" type="submit">Confirmar Código</button>
         </form>
       </div>
     </main>
@@ -80,6 +83,10 @@
     if (event.target == modal) {
       modal.style.display = "none";
     }
+  const span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      modal.style.display = "none";
+}
   
   };
 </script>
