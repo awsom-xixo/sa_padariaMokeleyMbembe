@@ -98,29 +98,17 @@ header h1 span.caixa {
   font-weight: bold;
   cursor: pointer;
 }
-
-.botaoME:hover{
-  transform: scale(1.1);
-}
-
-
 .botaoME {
   background-color: #fc5050;
-  width: 40px;
+  width: 60px;
   height: 40px;
   font-size: 20px;
   border-radius: 50%;
   text-align: center;
-  transition: 0.9s;
 }
-
-.botaoMA:hover{
-  transform: scale(1.1);
-}
-
 .botaoMA {
   background-color: #4a9a2e;
-  width: 40px;
+  width: 60px;
   height: 40px;
   font-size: 20px;
   border-radius: 50%;
