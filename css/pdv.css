@@ -17,10 +17,10 @@ body {
 main {
   width: 65%;
   margin: 0 auto;
-  margin-left:3%;
+  margin-left:3.5%;
   margin-right: 50%;
   margin-top:5%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -29,16 +29,21 @@ main h1{
   color:#f3a853
 }
 .main-total{
-  margin-top: -22.6%;
+  margin-top: -25%;
   margin-left:69%;
   width: 30%;
-  min-height: 1%;
+  height: 100%;
   padding: 10px 90px;
 }
 .info-total{
   justify-content: left;
   text-align: left;
   margin-left:10%;
+}
+.img{
+  height:150px;
+  width:150px;
+  margin-left:25%;
 }
 header{
   Width: 171%; margin-left: -35%;
