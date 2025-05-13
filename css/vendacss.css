@@ -94,33 +94,23 @@ header h1 span.caixa {
   cursor: pointer;
 }
 
-.botaoME:hover{
-  transform: scale(1.1);
-}
-
 
 .botaoME {
-  background-color: #fc5050;
-  width: 40px;
+  background-color: #f51717;
+  width: 60px;
   height: 40px;
   font-size: 20px;
   border-radius: 50%;
   text-align: center;
-  transition: 0.9s;
-}
-
-.botaoMA:hover{
-  transform: scale(1.1);
 }
 
 .botaoMA {
-  background-color: #4a9a2e;
-  width: 40px;
+  background-color: #32a508;
+  width: 60px;
   height: 40px;
   font-size: 20px;
   border-radius: 50%;
   padding: 0 auto;
-  transition: 0.9s;
 }
 
 .botaoADD {
@@ -173,11 +163,11 @@ table tbody td {
 }
 
 .editar {
-  color: #4caf50;
+  color: #6c6d6c;
 }
 
 .excluir {
-  color: #f44336;
+  color: #f51717;
 }
 
 /* Rodapé da venda */
