@@ -28,9 +28,11 @@ let estoque = [
         <td>${status}</td>
         <td>
         <button onclick="editarProduto(${produto.id})" class="edit-btn">
-      <i class="material-symbols-outlined">delete</i>
       <i class="material-symbols-outlined">edit</i>
-    </button>
+      </button>
+        <button onclick="editarProduto(${produto.id})" class="delete-btn">
+      <i class="material-symbols-outlined">delete</i>
+        </button>
   </td>
   
       `;
