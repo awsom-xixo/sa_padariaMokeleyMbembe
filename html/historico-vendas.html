@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Vendas ⌚</title>
+
     <link rel="stylesheet" href="../css/historico-vendas.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
     <link rel="stylesheet" href="../css/menu.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Histórico de vendas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/icon.png" type="image/png">
 </head>
+
 <body>
+
     <nav class="menu-lateral">
         <div class="cabeca-do-menu">
             <img src="../img/icon.png" alt="Logo Da Padaria Mokele y Mbembe" class="logo">
             <h1>Padaria<br>Mokele y Mbembe</h1>
         </div>
 
-        <ul>
-            <li class="item-menu">
-                <a href="../Tela_gerente/Tela_Gerente.html">
         <ul>
             <li class="item-menu">
                 <a href="menu-gerente.html">
@@ -30,7 +34,6 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="../Tela_Sistema_Vendas_Gerente/indexvenda.html">
                 <a href="sistema-vendas.html">
                     <span class="icon">
                         <span class="material-symbols-outlined">shopping_cart</span>
@@ -47,7 +50,6 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="#">
                 <a href="historico-vendas.html">
                     <span class="icon">
                         <span class="material-symbols-outlined">receipt_long</span>
@@ -56,7 +58,6 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="../Estoque_BOMBOCLAT/estoque.html">
                 <a href="estoque.html">
                     <span class="icon">
                         <span class="material-symbols-outlined">inventory_2</span>
@@ -65,7 +66,6 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="#">
                 <a href="Gestao-usuario.html">
                     <span class="icon">
                         <span class="material-symbols-outlined">groups</span>
@@ -82,7 +82,6 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="#">
                 <a href="login.html">
                     <span class="icon">
                         <span class="material-symbols-outlined">logout</span>
@@ -92,9 +91,12 @@
             </li>
         </ul>
     </nav>
+
+
     <main>
-        <header class="titulo-de-pagina">
-            <h1>Histórico de vendas</h1>
+        <header>
+            <div class="titulo-de-pagina">
+            <h1>Histórico de Vendas</h1>
         </header>
         
         <hr>
@@ -106,73 +108,36 @@
             <input id="metodo-pagamento-form" type="text" name="metodo-pagamento-form" placeholder="Método de pagamento">
 
 
-            <a href="segredo do curintia">Mais filtros</a>
+            <a href="#" id="mais-filtros">Mais filtros</a>
             
             <button id="filtrar">Filtrar</button>
         </form>
-        <!-- Esta tabela está fixa, sem ligação com o banco de dados, é necessario linkar ela ao banco para
-         uma estrutura funcional, alem disso verificar bem a ordem ja que nao pode ter o nome do atendente em QTDE -->
-         <div class="pesquisa-vendas">
-            <table class="tabela-vendas">
+
+        <div class="tabela-container">
+            <table id="tabelaUsuarios">
                 <thead>
                     <tr>
-                        <th id="prod">Produto</th>
-                        <th>Cod</th>
-                        <th>Qtde</th>
-                        <th>Uni medida</th>
-                        <th>Val uni</th>
-                        <th>Subtotal</th>
-                        <th id="acoes">Ações</th>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Cargo</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>12/04/25 - 14:56</td>
-                        <td>VEN-20250412-0001</td>
-                        <td>Josias M. Junco</td>
-                        <td>Cartão</td>
-                        <td>8</td>
-                        <td>45,99</td>
-                        <td><span class="material-symbols-outlined">edit</span></td>
-                        <td class="delete"><span class="material-symbols-outlined">delete</span></td>
-                    </tr>
-                    <tr>
-                        <td>12/04/25 - 15:02</td>
-                        <td>VEN-20250412-0002</td>
-                        <td>Josias M. Junco</td>
-                        <td>Pix</td>
-                        <td>12</td>
-                        <td>12,89</td>
-                        <td><span class="material-symbols-outlined">edit</span></td>
-                        <td><span class="material-symbols-outlined">delete</span></td>
-                    </tr>
-                    <tr>
-                        <td>12/04/25 - 15:07</td>
-                        <td>VEN-20250412-0003</td>
-                        <td>Josias M. Junco</td>
-                        <td>Cartão</td>
-                        <td>6</td>
-                        <td>10,79</td>
-                        <td><span class="material-symbols-outlined">open_in_full</span></td>
-                    </tr>
-                    <tr>
-                        <td>12/04/25 - 15:12</td>
-                        <td>VEN-20250412-0004</td>
-                        <td>Josias M. Junco</td>
-                        <td>Pix</td>
-                        <td>2</td>
-                        <td>17,99</td>
-                            <td><span class="material-symbols-outlined">open_in_full</span></td>
-                    </tr>
+                    <!-- Linhas via JS -->
                 </tbody>
-                    
             </table>
-            
+            <button class="export">Exportar</button>
         </div>
-        <button id="exportar">Exportar</button>
-        
     </main>
-    <script src="../js/js_historico-vendas.js"></script>
-    
+
+    <footer>
+        <div class="footer-esquerdo">Usuário: João Mbembe Gerente</div>
+        <div class="footer-direito">Copyright 2025-2025</div>
+    </footer>
 </body>
+<script src="../js/js_usuario.js"></script>
+
 </html>
