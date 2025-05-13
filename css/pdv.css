@@ -11,11 +11,26 @@ body {
   padding: 2rem;
 }
 
+<<<<<<< Updated upstream
 #pdv {
   width: 70%;
   padding: 2rem;
   border-radius: 16px;
   font-size: 0.8em;
+=======
+main {
+  width: 65%;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  background-color: #eeeeee;
+  padding: 0.5rem;
+  text-align: center;
+>>>>>>> Stashed changes
 }
 
 .area-busca {
@@ -50,6 +65,7 @@ body {
 }
 
 .btn-mais {
+<<<<<<< Updated upstream
   background-color: #5dda61;
 }
 
@@ -65,6 +81,9 @@ body {
 .btn-add{
   background-color: #f3a852;
   height: 40px;
+=======
+  background-color: #4a9a2e;
+>>>>>>> Stashed changes
 }
 
 table {
@@ -83,6 +102,7 @@ table thead th, table tbody td {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 .edit{
   color: #525ff3;
 }
@@ -115,10 +135,21 @@ table thead th, table tbody td {
 }
 
 #rodape-venda {
+=======
+.btn-acao {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+footer.rodape-venda {
+>>>>>>> Stashed changes
   background-color: #ffe0b2;
   border-top: 2px solid #f3a852;
   padding: 1rem;
   border-radius: 0 0 15px 15px;
+<<<<<<< Updated upstream
   width: 100%; /* Faz o footer ocupar toda a largura */
   text-align: center;
 }
@@ -138,3 +169,24 @@ table thead th, table tbody td {
   flex-direction: column;
   justify-content: space-evenly;
 }
+=======
+}
+
+.cabeca-do-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  min-height: 70px;
+}
+
+.cabeca-do-menu img.logo {
+  width: 50px;
+}
+
+.cabeca-do-menu h1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+>>>>>>> Stashed changes
