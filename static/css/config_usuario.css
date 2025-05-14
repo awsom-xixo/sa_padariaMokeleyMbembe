@@ -340,3 +340,30 @@ ul li.item-menu:hover a,
 ul li.item-menu:hover .icon {
     color: white;
 }
+
+#popup_usuario{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+    bottom: 65px;
+    left: 450px;
+}
+
+#popup_usuario input{
+    position: relative;
+    left: 5px;
+    width: 240px;
+}
+
+#btn_cadastrar{
+    position: relative;
+    left: 305px;
+    top: 80px;
+}
+
+#btn_voltar{
+    position: relative;
+    top: 36px;
+}
