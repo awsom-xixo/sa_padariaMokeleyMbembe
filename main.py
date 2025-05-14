@@ -51,16 +51,44 @@ def menu():
     conn.close()
     return render_template("html/menu-gerente.html")
 
-@app.route("/gestao-usuarios")
-def gestao_usuarios():
-
+@app.route("/gestao-usuarios", methods=["POST", "GET"])
+def gestao_usuarios(): 
     conn, cursor = conexao()
-    cursor.execute("""select u.id_usuario, u.nome, u.cpf, u.email, c.descricao from usuarios as u join cargos as c 
-    on u.id_cargo = c.id_cargo order by u.id_usuario""")
-    usuarios = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    return render_template("html/Gestao-usuario.html", usuarios=usuarios)
+
+    if request.method == "POST":
+        
+
+        nome = request.form['nomeForm']
+        cpf = request.form['cpfForm']
+        email = request.form['emailForm']
+        telefone = request.form['telefoneForm']
+        senha = request.form['senhaForm']
+        salario = request.form['salarioForm']
+        cargo = request.form['cargo']
+
+        
+        cursor.execute("insert into usuarios(id_cargo, telefone, email, cpf, senha, nome, salario)values(%s, %s, %s, %s, %s, %s, %s)", (cargo, telefone, email, cpf, senha, nome, salario))
+        conn.commit()
+
+        cursor.execute("""select u.id_usuario, u.nome, u.cpf, u.email, c.descricao from usuarios as u join cargos as c 
+        on u.id_cargo = c.id_cargo order by u.id_usuario""")
+        usuarios = cursor.fetchall()
+
+        
+        cursor.close()
+        conn.close()
+        return render_template("html/Gestao-usuario.html", usuarios=usuarios)
+    
+    else:
+        cursor.execute("""select u.id_usuario, u.nome, u.cpf, u.email, c.descricao from usuarios as u join cargos as c 
+        on u.id_cargo = c.id_cargo order by u.id_usuario""")
+        usuarios = cursor.fetchall()
+
+        
+        cursor.close()
+        conn.close()
+        return render_template("html/Gestao-usuario.html")
+
 
 @app.route("/historico-vendas")
 def historico_vendas():
