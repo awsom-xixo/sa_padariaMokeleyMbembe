@@ -8,7 +8,7 @@ app.secret_key = "banana"
 conn = mysql.connector.connect(
     user="root",
     host="localhost",
-    port="3306", #verificar a porta do senai para possiveis mudancas
+    port="3307", #verificar a porta do senai para possiveis mudancas
     password="root",
     database="sa_padariamokeleymbembe"
 )
@@ -21,7 +21,6 @@ def index():
 
 @app.route("/login", methods=["POST"])
 def login():
-    
     
     usuario = request.form['usuario']
     senha = request.form['senha']
@@ -42,8 +41,9 @@ def menu():
 
 @app.route("/gestao-usuarios")
 def gestao_usuarios():
+
     cursor.execute("""select u.id_usuario, u.nome, u.cpf, u.email, c.descricao from usuarios as u join cargos as c 
-    on u.id_usuario = c.id_cargo""")
+    on u.id_cargo = c.id_cargo order by u.id_usuario""")
     usuarios = cursor.fetchall()
     return render_template("html/Gestao-usuario.html", usuarios=usuarios)
 
