@@ -44,6 +44,9 @@ span.icon {
     color: #fff;
     cursor: pointer;
 }
+#close{
+    margin-top:7px;
+}
 
 .conteudo {
     display: flex;
