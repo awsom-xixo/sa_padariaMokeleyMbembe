@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/padrao.css" />
+    <link rel="stylesheet" href="../css/recu-senha.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../js/js_redirecionar.js"></script>
+    <title>Recuperação de Senha</title>
+  </head>
+  <body>
+    <main class="recu-senha">
+      <header class="titulo-de-pagina">
+        <a href="recu-senha-code.html" >
+          <span class="material-symbols-outlined icon">arrow_back</span>
+        </a>   
+        <h1>Redefinir Senha</h1>
+      </header>
+      <div class="conteudo">
+        <p>Preencha os campos abaixo com sua nova senha e clique em "Redefinir Senha".</p>
+        <form>
+          <input type="text" placeholder="Nova senha" name="password" class="campo"/>
+          <input type="text" placeholder="Repetir senha" name="repassword" class="campo"/>
+          <button class="btn" type="button" onclick="redi_login()">Redefinir Senha</button>
+        </form>
+      </div>
+    </main>
+</body>
+</html>
