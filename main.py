@@ -21,7 +21,7 @@ def index():
 
 @app.route("/login", methods=["POST"])
 def login():
-    
+
     usuario = request.form['usuario']
     senha = request.form['senha']
 
@@ -46,6 +46,26 @@ def gestao_usuarios():
     on u.id_cargo = c.id_cargo order by u.id_usuario""")
     usuarios = cursor.fetchall()
     return render_template("html/Gestao-usuario.html", usuarios=usuarios)
+
+@app.route("/historico-vendas")
+def historico_vendas():
+    return render_template("html/historico-vendas.html")
+
+@app.route("/estoque")
+def estoque():
+    return render_template("html/estoque.html")
+
+@app.route("/comanda")
+def comanda():
+    return "Comandas"
+
+@app.route("/dashboard")
+def dashboard():
+    return "Dashboard"
+
+@app.route("/pvd")
+def pvd():
+    return "Sistema de vendas"
 
 
 if __name__ == "__main__":
